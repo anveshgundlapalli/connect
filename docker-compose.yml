@@ -1,0 +1,28 @@
+version: '3.3'
+
+services:
+
+  connect-frontend:
+    build: 
+      context: .
+      dockerfile: ./frontend.Dockerfile
+    ports: 
+      - "3000:3000"
+    command: npm start
+    networks: 
+      - connect-net
+    stdin_open: true
+  
+  connect-api:
+    build:
+      context: .
+      dockerfile: ./api.Dockerfile
+    ports:
+      - "3010:3010"
+    command: node src/index.js
+    networks:
+      - connect-net
+    stdin_open: true
+
+networks:
+  connect-net:
