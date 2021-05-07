@@ -1,0 +1,6 @@
+[submodule "connect-backend"]
+	path = connect-backend
+	url = http://github.com/anveshgundlapalli/connect-backend
+[submodule "connect-frontend"]
+	path = connect-frontend
+	url = http://github.com/anveshgundlapalli/connect-frontend
