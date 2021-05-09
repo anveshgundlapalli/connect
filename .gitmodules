@@ -4,3 +4,6 @@
 [submodule "connect-frontend"]
 	path = connect-frontend
 	url = http://github.com/anveshgundlapalli/connect-frontend
+[submodule "connect-cli"]
+	path = connect-cli
+	url = http://github.com/anveshgundlapalli/connect-cli.git
